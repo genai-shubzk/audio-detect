@@ -1,4 +1,4 @@
-# Audio Authenticity Detector App
+# Audio Authenticity Detector
 
 A Next.js + React app that uses Google's Gemini API to judge whether an uploaded MP3 contains a human voice or AI-synthesized speech. Designed to deploy to Vercel in one click.
 
