@@ -87,7 +87,7 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-4 py-12 sm:py-20">
       <header className="mb-10 text-center">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-lg shadow-violet-500/20">
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-lg shadow-blue-500/25">
           <MicIcon className="h-6 w-6" />
         </div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -138,7 +138,7 @@ export default function Home() {
           <button
             onClick={analyze}
             disabled={status === "analyzing"}
-            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-medium text-white transition hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-100"
+            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-sm font-medium text-white shadow-sm shadow-blue-600/20 transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-blue-500 dark:hover:bg-blue-400"
           >
             {status === "analyzing" ? (
               <>
@@ -190,13 +190,13 @@ function Dropzone({
       onDrop={onDrop}
       className={`flex w-full flex-col items-center justify-center rounded-2xl border-2 border-dashed px-6 py-12 text-center transition ${
         dragOver
-          ? "border-violet-400 bg-violet-50 dark:bg-violet-950/30"
+          ? "border-blue-400 bg-blue-50 dark:border-blue-500 dark:bg-blue-950/30"
           : "border-zinc-300 hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-zinc-600"
       }`}
     >
       <UploadIcon className="mb-3 h-7 w-7 text-zinc-400" />
       <p className="text-sm font-medium">
-        Drop an MP3 here, or <span className="text-violet-600 dark:text-violet-400">browse</span>
+        Drop an MP3 here, or <span className="text-blue-600 dark:text-blue-400">browse</span>
       </p>
       <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
         Up to {limitMb} MB
